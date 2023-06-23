@@ -1,0 +1,5 @@
+#!/bin/bash
+
+brigh_cur=$(brightnessctl -d intel_backlight | grep '%' | awk '{print $4}' | sed 's/(//g' | sed 's/)//g' | sed 's/ //g')
+
+echo "${brigh_cur}"

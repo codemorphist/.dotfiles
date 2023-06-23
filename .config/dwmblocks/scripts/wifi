@@ -1,0 +1,4 @@
+#!/bin/bash
+
+essid="$(iwgetid -r)"
+echo "${essid}"
