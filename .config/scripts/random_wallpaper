@@ -1,0 +1,9 @@
+#!/bin/bash
+
+while (true)
+do 
+	
+	feh --bg-scale $(find /home/kw/pictures/wallpapers -type f | shuf -n 1)
+	sleep 10m
+
+done
