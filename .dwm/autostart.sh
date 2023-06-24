@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Touchpad
-xinput set-prop 10 'libinput Tapping Enabled' 1
-
 # Keyboard layout
 setxkbmap 'us,ua,ru' -option 'grp:alt_shift_toggle'
 
