@@ -82,10 +82,10 @@
     separator_height = 2
 
     # Padding between text and separator.
-    padding = 12
+    padding = 10
 
     # Horizontal padding.
-    horizontal_padding = 12
+    horizontal_padding = 10
 
     # Padding between text and icon.
     text_icon_padding = 0
@@ -95,7 +95,7 @@
     frame_width = 2
 
     # Defines color of the frame around the notification window.
-    frame_color = "#aaaaaa"
+    frame_color = "#efefef"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -112,7 +112,7 @@
     separator_color = frame
 
     # Sort messages by urgency.
-    sort = yes
+    sort = no
 
     # Don't remove messages, if the user is idle (no mouse or keyboard input)
     # for longer than idle_threshold seconds.
@@ -163,7 +163,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%s</b>\n%b"
+    format = "<span font='8'><i>%a</i></span>\n<b>%s</b>\n\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -316,7 +316,7 @@
     background = "#1e222a"
     foreground = "#ebcb8d"
     frame_color = "#ebcb8d"
-    timeout = 10
+    timeout = 4
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -324,7 +324,7 @@
     background = "#1e222a"
     foreground = "#efefef"
     frame_color = "#bc7ad9"
-    timeout = 10
+    timeout = 8
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
 
@@ -332,7 +332,7 @@
     background = "#1e222a"
     foreground = "#e06c75"
     frame_color = "#e06c75"
-    timeout = 0
+    timeout = 5
     # Icon for notifications with critical urgency, uncomment to enable
     #default_icon = /path/to/icon
 

@@ -1,3 +1,7 @@
 #!/bin/bash
 
 brightnessctl -d intel_backlight s 5%-
+
+curr_bright="$(brightnessctl | grep "%" | awk '{ print $4 }' | tr -d '(%)')"
+notify-send -a "brightness change" -h int:value:$curr_bright "󰃠 Brightness -"
+

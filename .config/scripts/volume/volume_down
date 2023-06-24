@@ -1,0 +1,6 @@
+#!/bin/bash
+
+pulsemixer --change-volume -5
+
+curr_vol="$(pulsemixer --get-volume | awk '{ print $1 }')"
+notify-send -a "volume change" -h int:value:$curr_vol " Volume -"

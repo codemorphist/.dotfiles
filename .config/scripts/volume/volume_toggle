@@ -1,10 +1,13 @@
 #!/bin/bash
 
 muted="$(pulsemixer --get-mute)"
+curr_vol="$(pulsemixer --get-volume | awk '{ print $1 }')"
 
 if [[ $muted -eq "0" ]];
 then
   pulsemixer --mute
+  notify-send -a "volume change" -h int:value:0 " Volume"
 else 
   pulsemixer --unmute
+  notify-send -a "volume change" -h int:value:$curr_vol " Volume"
 fi
