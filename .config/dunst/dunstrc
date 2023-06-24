@@ -97,6 +97,9 @@
     # Defines color of the frame around the notification window.
     frame_color = "#efefef"
 
+    # Highlight color (progess bar color)
+    highlight = "#bc7ad9"
+
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
     # of size frame_width will be drawn around each notification instead.
@@ -163,7 +166,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<span font='8'><i>%a</i></span>\n<b>%s</b>\n\n%b"
+    format = "<span font='8'><i>%a</i></span>\n<b>%s</b>\n%b"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -323,7 +326,7 @@
 [urgency_normal]
     background = "#1e222a"
     foreground = "#efefef"
-    frame_color = "#bc7ad9"
+    frame_color = "#4d78cc"
     timeout = 8
     # Icon for notifications with normal urgency, uncomment to enable
     #default_icon = /path/to/icon
