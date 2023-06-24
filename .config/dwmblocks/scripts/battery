@@ -2,7 +2,7 @@
 
 bat_perc="$(cat /sys/class/power_supply/BAT0/capacity)"
 
-if [[ $(cat /sys/class/power_supply/BAT0/status ) == "Discharging" ]]; 
+if [[ $(cat /sys/class/power_supply/BAT0/status) == "Discharging" ]]; 
 then
   charging=""
 else
