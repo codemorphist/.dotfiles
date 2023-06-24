@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cpu_perc="$(top -bn2 | grep '%Cpu' | tail -1 | grep -P '(....|...) id,'|awk '{print 100-($8/4)}')"
-echo "${cpu_perc}% CPU "
+cpu_perc=$(grep 'cpu ' /proc/stat | awk '{printf "%.2f", ($2+$4)*100/($2+$4+$5)}')
+echo "${cpu_perc}%"
