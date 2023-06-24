@@ -2,6 +2,7 @@
 
 # Keyboard layout
 setxkbmap 'us,ua,ru' -option 'grp:alt_shift_toggle'
+setxkbmap -option "ctrl:nocaps"
 
 # Wallpapers
 /home/kw/.config/scripts/random_wallpaper &
@@ -14,3 +15,6 @@ flameshot &
 
 # dwmblocks
 dwmblocks &
+
+# dunst
+dunst &

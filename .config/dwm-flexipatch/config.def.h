@@ -449,7 +449,7 @@ static char *statuscolors[][ColCount] = {
     /*                       fg                bg                border float */
     [SchemeNorm] = {"#e06c75", normbgcolor, normbordercolor, normfloatcolor},
     [SchemeSel] = {"#c9866f", normbordercolor, selbordercolor, selfloatcolor},
-    [SchemeTitleNorm] = {"#39D7E5", normbgcolor, titlenormbordercolor,
+    [SchemeTitleNorm] = {"#39d7e5", normbgcolor, titlenormbordercolor,
                          titlenormfloatcolor},
     [SchemeTitleSel] = {"#6bb2c0", normbordercolor, titleselbordercolor,
                         titleselfloatcolor},
