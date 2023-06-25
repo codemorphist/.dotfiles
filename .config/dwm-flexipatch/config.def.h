@@ -1060,6 +1060,10 @@ static const char *upbright[] = {
 static const char *downbright[] = {
     "/home/kw/.config/scripts/brightness/brightness_down", NULL};
 
+// Screenshot
+static const char *scrsht[] = {"flameshot", "gui", NULL};
+static const char *scrsht_full[] = {"flameshot", "full", NULL};
+
 #include <X11/XF86keysym.h>
 
 static const Key keys[] = {
@@ -1590,12 +1594,18 @@ static const Key keys[] = {
 
     // CUSTOM CONTROLES
 
+    // Volume
     {MODKEY, XK_F1, spawn, {.v = mutevol}},
     {MODKEY, XK_F2, spawn, {.v = downvol}},
     {MODKEY, XK_F3, spawn, {.v = upvol}},
 
+    // Brightness
     {MODKEY, XK_F4, spawn, {.v = downbright}},
     {MODKEY, XK_F5, spawn, {.v = upbright}},
+
+    // Screenshot
+    {MODKEY | ShiftMask, XK_Print, spawn, {.v = scrsht}},
+    {MODKEY, XK_Print, spawn, {.v = scrsht_full}},
 };
 
 #if KEYMODES_PATCH
