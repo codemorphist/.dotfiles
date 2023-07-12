@@ -1,8 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 
-# Keyboard layout
+# Keyboard setup
 setxkbmap 'us,ua,ru' -option 'grp:alt_shift_toggle'
 setxkbmap -option "ctrl:nocaps"
+synclient TapButton3=2 
+
+# warpd 
+warpd
 
 # Wallpapers
 /home/kw/.config/scripts/random_wallpaper &
