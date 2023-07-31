@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Xscreensaver
+xscreensaver &
+
 # Keyboard setup
 setxkbmap 'us,ua,ru' -option 'grp:alt_shift_toggle'
 setxkbmap -option "ctrl:nocaps"
