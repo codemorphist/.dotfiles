@@ -111,7 +111,7 @@ static const int vertpadbar = 0;  /* vertical padding for statusbar */
 static const char buttonbar[] = "<O>";
 #endif // BAR_STATUSBUTTON_PATCH
 #if BAR_SYSTRAY_PATCH
-static const unsigned int systrayspacing = 2; /* systray spacing */
+static const unsigned int systrayspacing = 1; /* systray spacing */
 static const int showsystray = 1;             /* 0 means no systray */
 #endif                                        // BAR_SYSTRAY_PATCH
 #if BAR_TAGLABELS_PATCH
@@ -1173,6 +1173,10 @@ static const Key keys[] = {
      updateinset,
      {.v = &default_inset}},
 #endif // INSETS_PATCH
+    {MODKEY, XK_o, hidewin, {0}},
+    {MODKEY | ShiftMask, XK_o, restorewin, {0}},
+    {MODKEY, XK_w, hideotherwins, {0}},
+    {MODKEY | ShiftMask, XK_w, restoreotherwins, {0}},
     {MODKEY, XK_Return, zoom, {0}},
 #if VANITYGAPS_PATCH
     {MODKEY | Mod4Mask, XK_u, incrgaps, {.i = +1}},
