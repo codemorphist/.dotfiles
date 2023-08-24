@@ -1,1 +1,3 @@
-exec dwm
+#!/bin/sh
+
+exec dwm > /dev/null

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Xscreensaver
-xscreensaver &
+# xscreensaver &
 
 # Keyboard setup
 setxkbmap 'us,ua,ru' -option 'grp:alt_shift_toggle'
