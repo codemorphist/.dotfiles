@@ -6,7 +6,7 @@ if [[ $(cat /sys/class/power_supply/BAT0/status) == "Discharging" ]];
 then
   charging=""
 else
-  charging="(󰚥) "
+  charging="[󰚥]"
 fi
 
 echo -e "${bat_perc}% ${charging}"

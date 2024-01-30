@@ -5,7 +5,7 @@ mutted="$(pulsemixer --get-mute)"
 
 if [[ $mutted -eq "1" ]];
 then
-  mutted=" (󰽅)"
+  mutted=" [󰖁]"
 else
   mutted=""
 fi
